@@ -21,6 +21,6 @@ jobs:
           sudo git config --system --add safe.directory '*'
           cd /home/julia.vicente/praticadevops03/
           sudo chmod 777 .
-          git pull
+          sudo chown -R julia.vicente@acad.espm.br .
+          sudo git pull
           sudo docker-compose down
-          sudo docker-compose up -d
