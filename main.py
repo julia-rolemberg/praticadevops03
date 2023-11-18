@@ -9,7 +9,6 @@ from sqlalchemy import Column, Integer, String
 #  Importa o os
 import os
 
-
 # Instancia o FastAPI
 app = FastAPI()
 
