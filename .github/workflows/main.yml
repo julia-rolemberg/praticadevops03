@@ -18,6 +18,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         script: |
+          git config --global --add safe.directory /home/julia.vicente/praticadevops03
           cd /home/julia.vicente/praticadevops03/
           git pull
           sudo docker-compose down
