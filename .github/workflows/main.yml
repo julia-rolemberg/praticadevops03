@@ -18,8 +18,9 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         script: |
-          git config --system --add safe.directory '*'
+          sudo git config --system --add safe.directory '*'
           cd /home/julia.vicente/praticadevops03/
+          sudo chmod 777 .
           sudo chown -R julia.vicente@acad.espm.br .
           sudo git pull
           sudo docker-compose down
